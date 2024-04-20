@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #f0f0f0; 
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #8ba18a;
+    padding: 0 20px;
+}
+
+.navbar img {
+    height: 80px;
+    width: 80px;
+    margin-left: -30px;
+    padding-left: 0px;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+    position: relative;
+    padding: 10px;
+}
+
+.navbar-links a:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark color */
+    z-index: -1;
+}
+
+
+.wild {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.content {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: rgb(251, 251, 251);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.person {
+    position: relative; /* Ensure positioning context for absolute positioning */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 180px;
+    height: 190px;
+    margin-left:60px;
+    margin-right: 40px;
+    padding-left: 0%;
+}
+
+#ip2,
+#ip3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 25px;
+    border: 2.5px solid rgb(174, 174, 174);
+    padding: 30px; 
+    margin-left:40px;
+    opacity: 0.5;
+    
+}
+
+#ip2 {
+    left: 200px; 
+}
+
+#ip3 {
+    left: 200px; 
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
